@@ -1,1 +1,1 @@
-# Sound Empire – Sprint 1 (Updated)\n\nRun:\n1) npm install\n2) npm run dev\n
+Sound Empire Sprint 1.1 UI pass

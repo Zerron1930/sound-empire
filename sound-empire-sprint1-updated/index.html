@@ -2,9 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sound Empire – Sprint 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Sound Empire — Sprint 1.1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root{
+        --gold:#f6c445; --gold-600:#f1b930; --surface:#0b0b0c;
+      }
+      html,body,#root{height:100%}
+      body{
+        font-family:'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+        background:
+          radial-gradient(1200px 600px at 80% -10%, rgba(246,196,69,0.10), transparent 60%),
+          radial-gradient(1000px 600px at -10% 110%, rgba(246,196,69,0.08), transparent 60%),
+          var(--surface);
+        color:#e5e7eb;
+      }
+      .gold { color: var(--gold); }
+      .btn-gold{
+        background: linear-gradient(180deg, var(--gold) 0%, var(--gold-600) 100%);
+        color:#111827; font-weight:700; border-radius:14px; padding:10px 16px;
+        box-shadow:0 6px 18px rgba(246,196,69,0.25);
+      }
+      .card{
+        background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+        border:1px solid rgba(255,255,255,0.06);
+        border-radius:18px; padding:16px;
+      }
+      .glass{
+        background:rgba(255,255,255,0.04);
+        backdrop-filter: saturate(140%) blur(8px);
+        border:1px solid rgba(255,255,255,0.06);
+      }
+      .safe-bottom{ padding-bottom: env(safe-area-inset-bottom); }
+      .sticky-nav{ position: fixed; bottom: 0; left: 0; right: 0; z-index: 40; }
+      .tab-btn{ display:flex; flex-direction:column; align-items:center; gap:6px; padding:10px 8px; border-radius:14px; min-width:64px; color:#cbd5e1; }
+      .tab-btn.active{ background:rgba(246,196,69,0.14); color:var(--gold) }
+      .pill{ border-radius:999px; padding:6px 12px; border:1px solid rgba(255,255,255,0.08); }
+    </style>
   </head>
   <body class="bg-neutral-950 text-neutral-100">
     <div id="root"></div>

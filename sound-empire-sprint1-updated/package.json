@@ -1,8 +1,8 @@
 {
-  "name": "sound-empire-mvp",
-  "version": "1.2.0",
+  "name": "sound-empire-sprint1-1",
   "private": true,
   "type": "module",
+  "version": "1.1.1",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
